@@ -42,8 +42,8 @@ pila = Pila()
 
 for i in operacion:
     if i=='+' or i=='-' or i=='*' or i=='/':
-        izq=pila.desapilar()
         der=pila.desapilar()
+        izq=pila.desapilar()
         nodo = Nodo(i, izq, der)
         pila.apilar(nodo)
     else:
